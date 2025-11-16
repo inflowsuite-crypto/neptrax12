@@ -44,7 +44,6 @@ export default function About() {
           }}
         >
           {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/60 z-0"></div>
           
           {/* Content */}
           <div className="relative z-10">
