@@ -22,7 +22,7 @@ export default function FAQs({ onNavigate }: FAQsProps) {
       answer: 'Yes, we offer full maintenance plans from content updates and bug fixes to security checks ensuring your site stays fast, secure, and up-to-date.',
     },
     {
-      question: 'How do you help increase online sales and engagement?',
+      question: 'How do you help increase online sales?',
       answer: 'We combine user-centered design with marketing insights to improve conversions, enhance user experience, and grow audience engagement across platforms.',
     },
     {
