@@ -48,10 +48,10 @@ export default function About() {
           
           {/* Content */}
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold text-[#fffff] mb-6">
+            <h2 className="text-3xl font-bold text-[#edf0ef] mb-6">
               Based in Chicago, USA
             </h2>
-            <div className="space-y-4 text-[#ffffff] text-lg leading-relaxed">
+            <div className="space-y-4 text-[#edf0ef] text-lg leading-relaxed">
               <p>
                 We're proudly based in Chicago, serving clients across the U.S. and beyond. Since 2018, we've been helping businesses turn ideas into real digital growth. Over the years, we've partnered with startups, agencies, and established brands to create modern, high-performance solutions that actually move the needle.
               </p>
