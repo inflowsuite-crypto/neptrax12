@@ -12,26 +12,26 @@ export default function Portfolio() {
   const [projects, setProjects] = useState<Project[]>([]);
 
   const projectsData: Project[] = [
-    { name: 'Wilde Brands', description: 'E-commerce fashion brand site', url: 'https://www.wildebrands.com/', image: 'public/portfolio/wildebrands.png' },
-    { name: 'Jeton', description: 'Fintech payment platform', url: 'https://www.jeton.com/', image: 'public/portfolio/jeton.png' },
-    { name: 'The Foursquare Church', description: 'Logistics and shipping services', url: 'https://www.foursquare.org/', image: 'public/portfolio/church.png' },
-    { name: 'Rothy\'s', description: 'Sustainable fashion e-commerce brand', url: 'https://rothys.com/', image: 'public/portfolio/rothys.png' },
-    { name: 'Inflow Saas', description: 'Powerful cloud-based CRM for businesses', url: 'https://inflowcore.netlify.app/', image: 'public/portfolio/inflow.png' },
-    { name: 'Sono Restaurant', description: 'Restaurant website and menu', url: 'https://sonorestaurant.com.au/', image: 'public/portfolio/sono.png' },
-    { name: 'USA Home Remodeling', description: 'Home remodeling services site', url: 'https://usahomeremodeling.com/', image: 'public/portfolio/usa.png' },
-    { name: 'Big Night', description: 'Restaurant and events venue site', url: 'https://www.bignight.com/', image: 'public/portfolio/bignight.png' },
-    { name: 'Seraat', description: 'Business services website', url: 'https://www.seraat.com/', image: 'public/portfolio/seraat.png' },
-    { name: "Let's Encrypt", description: 'Internet security and encryption services', url: 'https://letsencrypt.org/', image: 'public/portfolio/letsencrypt.png' },
-    { name: 'Vintage Modern Films', description: 'Creative production company', url: 'https://www.vintagemodernfilms.com/', image: 'public/portfolio/vintagemodernfilms.png' },
-    { name: 'University of Richmond', description: 'Real estate and community website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
-    { name: 'Nalgene', description: 'Product brand and e-commerce store', url: 'https://nalgene.com/', image: 'public/portfolio/nalgene.png' },
-    { name: 'Pho Cafe', description: 'Restaurant website', url: 'https://www.phocafe.co.uk/', image: 'public/portfolio/pho.png' },
-    { name: 'Rasht Delectable', description: 'Food brand e-commerce store', url: 'https://rashtdelectables.com/', image: 'public/portfolio/rasht.png' },
-    { name: 'Spirit Dog Training', description: 'Dog training services and coaching', url: 'https://spiritdogtraining.com/', image: 'public/portfolio/spiritdog.png' },
-    { name: 'SGUA', description: 'Architecture and design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
-    { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
-    { name: '99% Invisible', description: 'Digital design and media publication', url: 'https://99percentinvisible.org/', image: 'public/portfolio/99.png' },
-    { name: 'Sweeten', description: 'Home renovation platform', url: 'https://sweeten.com/', image: 'public/portfolio/sweeten.png' },
+    { name: 'Wilde Brands', description: 'E-commerce fashion apparel and accessories brand', url: 'https://www.wildebrands.com/', image: 'public/portfolio/wildebrands.png' },
+    { name: 'Jeton Wallet', description: 'Digital payment and money transfer platform', url: 'https://www.jeton.com/', image: 'public/portfolio/jeton.png' },
+    { name: 'Foursquare Church', description: 'Christian denomination church network website', url: 'https://www.foursquare.org/', image: 'public/portfolio/church.png' },
+    { name: 'Rothy\'s Shoes', description: 'Sustainable footwear made from recycled materials', url: 'https://rothys.com/', image: 'public/portfolio/rothys.png' },
+    { name: 'Inflow CRM', description: 'Cloud-based customer relationship management software', url: 'https://inflowcore.netlify.app/', image: 'public/portfolio/inflow.png' },
+    { name: 'Sono Restaurant', description: 'Fine dining Japanese restaurant and venue', url: 'https://sonorestaurant.com.au/', image: 'public/portfolio/sono.png' },
+    { name: 'USA Home Remodeling', description: 'Home renovation and construction services', url: 'https://usahomeremodeling.com/', image: 'public/portfolio/usa.png' },
+    { name: 'Big Night Events', description: 'Restaurant and special events venue space', url: 'https://www.bignight.com/', image: 'public/portfolio/bignight.png' },
+    { name: 'Seraat Platform', description: 'Business news and financial data platform', url: 'https://www.seraat.com/', image: 'public/portfolio/seraat.png' },
+    { name: "Let's Encrypt", description: 'Free SSL certificate authority for websites', url: 'https://letsencrypt.org/', image: 'public/portfolio/letsencrypt.png' },
+    { name: 'Vintage Modern Films', description: 'Creative video production company portfolio', url: 'https://www.vintagemodernfilms.com/', image: 'public/portfolio/vintagemodernfilms.png' },
+    { name: 'University of Richmond', description: 'Private university academic institution website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
+    { name: 'Nalgene Bottles', description: 'Durable plastic water bottles and containers', url: 'https://nalgene.com/', image: 'public/portfolio/nalgene.png' },
+    { name: 'Pho Cafe', description: 'Vietnamese restaurant serving pho and noodles', url: 'https://www.phocafe.co.uk/', image: 'public/portfolio/pho.png' },
+    { name: 'Rasht Delectables', description: 'Gourmet food products and specialty foods', url: 'https://rashtdelectables.com/', image: 'public/portfolio/rasht.png' },
+    { name: 'Spirit Dog Training', description: 'Online dog training courses and resources', url: 'https://spiritdogtraining.com/', image: 'public/portfolio/spiritdog.png' },
+    { name: 'SGUA Architects', description: 'Architecture and urban design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
+    { name: 'Breyer Construction', description: 'Custom home building and remodeling services', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
+    { name: '99% Invisible', description: 'Design and architecture podcast publication', url: 'https://99percentinvisible.org/', image: 'public/portfolio/99.png' },
+    { name: 'Sweeten Platform', description: 'Home renovation contractor matching platform', url: 'https://sweeten.com/', image: 'public/portfolio/sweeten.png' },
   ];
 
   useEffect(() => {
@@ -43,8 +43,12 @@ export default function Portfolio() {
     e.currentTarget.style.display = 'none';
   };
 
+  const handleImageClick = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0a192f] to-[#0d1117] pt-24 pb-20">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a1a3f] via-[#0a142f] to-[#0d1117] pt-24 pb-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-[#f1f5f9] mb-4">
@@ -61,7 +65,10 @@ export default function Portfolio() {
               key={index}
               className="group bg-[#1e293b] rounded-2xl overflow-hidden hover:shadow-[0_0_40px_rgba(37,99,235,0.4)] transition-all duration-300 cursor-pointer"
             >
-              <div className="relative h-64 bg-gradient-to-br from-[#0f172a] to-[#2563eb] overflow-hidden">
+              <div 
+                className="relative h-64 bg-gradient-to-br from-[#0f172a] to-[#2563eb] overflow-hidden cursor-pointer"
+                onClick={() => handleImageClick(project.url)}
+              >
                 <img
                   src={project.image}
                   alt={project.name}
@@ -72,21 +79,16 @@ export default function Portfolio() {
                 
                 {/* Hover overlay with visit website button */}
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#828787] text-[#f1f5f9] font-medium text-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]"
-                  >
+                  <div className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e3a8a] text-[#f1f5f9] font-medium text-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]">
                     Visit Website
                     <ExternalLink size={16} className="transition-transform" />
-                  </a>
+                  </div>
                 </div>
               </div>
 
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-[#f1f5f9] mb-2">{project.name}</h3>
-                <p className="text-[#94a3b8] text-sm">{project.description}</p>
+                <p className="text-[#94a3b8] text-sm leading-tight">{project.description}</p>
               </div>
             </div>
           ))}
