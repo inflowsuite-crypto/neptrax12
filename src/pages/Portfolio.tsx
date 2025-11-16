@@ -31,7 +31,7 @@ export default function Portfolio() {
     { name: 'SGUA', description: 'Architecture and design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
     { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
     { name: 'Container', description: 'Logistics and shipping services', url: 'https://www.container.com/', image: 'public/portfolio/martincontainer.png' },
-    { name: 'HBNO', description: 'Real estate and community website', url: 'https://hbno.com/', image: 'public/portfolio/hbno.png' },
+    { name: 'University of Richmond', description: 'Real estate and community website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
   ];
 
     useEffect(() => {
