@@ -33,18 +33,32 @@ export default function About() {
           </p>
         </div>
 
-        {/* Chicago Section Moved to Top */}
-        <div className="bg-[#1e293b] rounded-2xl p-12 mb-16">
-          <h2 className="text-3xl font-bold text-[#f1f5f9] mb-6">
-            Based in Chicago, USA
-          </h2>
-          <div className="space-y-4 text-[#94a3b8] text-lg leading-relaxed">
-            <p>
-              We're proudly based in Chicago, serving clients across the U.S. and beyond. Since 2018, we've been helping businesses turn ideas into real digital growth. Over the years, we've partnered with startups, agencies, and established brands to create modern, high-performance solutions that actually move the needle.
-            </p>
-            <p>
-              Rooted in Chicago's culture of innovation and hard work, our team is focused on delivering reliable service, clear communication, and results you can measure. Whether you're building something new or improving what you already have, we're here to support your business every step of the way.
-            </p>
+        {/* Chicago Section with Background Image */}
+        <div 
+          className="relative rounded-2xl p-12 mb-16 overflow-hidden"
+          style={{
+            backgroundImage: "url('/chicago.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/60 z-0"></div>
+          
+          {/* Content */}
+          <div className="relative z-10">
+            <h2 className="text-3xl font-bold text-[#f1f5f9] mb-6">
+              Based in Chicago, USA
+            </h2>
+            <div className="space-y-4 text-[#94a3b8] text-lg leading-relaxed">
+              <p>
+                We're proudly based in Chicago, serving clients across the U.S. and beyond. Since 2018, we've been helping businesses turn ideas into real digital growth. Over the years, we've partnered with startups, agencies, and established brands to create modern, high-performance solutions that actually move the needle.
+              </p>
+              <p>
+                Rooted in Chicago's culture of innovation and hard work, our team is focused on delivering reliable service, clear communication, and results you can measure. Whether you're building something new or improving what you already have, we're here to support your business every step of the way.
+              </p>
+            </div>
           </div>
         </div>
 
