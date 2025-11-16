@@ -23,7 +23,7 @@ export default function Portfolio() {
     { name: 'Seraat', description: 'Business services website', url: 'https://www.seraat.com/', image: 'public/portfolio/seraat.png' },
     { name: "Let's Encrypt", description: 'Internet security and encryption services', url: 'https://letsencrypt.org/', image: 'public/portfolio/letsencrypt.png' },
     { name: 'Vintage Modern Films', description: 'Creative production company', url: 'https://www.vintagemodernfilms.com/', image: 'public/portfolio/vintagemodernfilms.png' },
-    { name: 'Sweeten', description: 'Home renovation platform', url: 'https://sweeten.com/', image: 'public/portfolio/sweeten.png' },
+    { name: 'University of Richmond', description: 'Real estate and community website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
     { name: 'Nalgene', description: 'Product brand and e-commerce store', url: 'https://nalgene.com/', image: 'public/portfolio/nalgene.png' },
     { name: 'Pho Cafe', description: 'Restaurant website', url: 'https://www.phocafe.co.uk/', image: 'public/portfolio/pho.png' },
     { name: 'Rasht Delectable', description: 'Food brand e-commerce store', url: 'https://rashtdelectables.com/', image: 'public/portfolio/rasht.png' },
@@ -31,7 +31,7 @@ export default function Portfolio() {
     { name: 'SGUA', description: 'Architecture and design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
     { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
     { name: '99% Invisible', description: 'Digital design and media publication', url: 'https://99percentinvisible.org/', image: 'public/portfolio/99.png' },
-    { name: 'University of Richmond', description: 'Real estate and community website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
+    { name: 'Sweeten', description: 'Home renovation platform', url: 'https://sweeten.com/', image: 'public/portfolio/sweeten.png' },
   ];
 
     useEffect(() => {
