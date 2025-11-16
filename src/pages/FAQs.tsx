@@ -74,7 +74,9 @@ export default function FAQs({ onNavigate }: FAQsProps) {
               className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:scale-[1.02]"
             >
               {/* Animated background gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1e293b] via-[#1e3a8a] to-[#1e293b] opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className={`absolute inset-0 bg-gradient-to-br from-[#1e293b] via-[#1e3a8a] to-[#1e293b] transition-opacity duration-500 ${
+                openIndex === index ? 'opacity-100' : 'opacity-80 group-hover:opacity-100'
+              }`}></div>
               
               {/* Shimmer effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
