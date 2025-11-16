@@ -14,7 +14,7 @@ export default function Portfolio() {
   const projectsData: Project[] = [
     { name: 'Wilde Brands', description: 'E-commerce fashion brand site', url: 'https://www.wildebrands.com/', image: 'public/portfolio/wildebrands.png' },
     { name: 'Jeton', description: 'Fintech payment platform', url: 'https://www.jeton.com/', image: 'public/portfolio/jeton.png' },
-    { name: '99% Invisible', description: 'Digital design and media publication', url: 'https://99percentinvisible.org/', image: 'public/portfolio/99.png' },
+    { name: 'The Foursquare Church', description: 'Logistics and shipping services', url: 'https://www.foursquare.org/', image: 'public/portfolio/church.png' },
     { name: 'Rothy\'s', description: 'Sustainable fashion e-commerce brand', url: 'https://rothys.com/', image: 'public/portfolio/rothys.png' },
     { name: 'Inflow Saas', description: 'Powerful cloud-based CRM for businesses', url: 'https://inflowcore.netlify.app/', image: 'public/portfolio/inflow.png' },
     { name: 'Sono Restaurant', description: 'Restaurant website and menu', url: 'https://sonorestaurant.com.au/', image: 'public/portfolio/sono.png' },
@@ -30,7 +30,7 @@ export default function Portfolio() {
     { name: 'Spirit Dog Training', description: 'Dog training services and coaching', url: 'https://spiritdogtraining.com/', image: 'public/portfolio/spiritdog.png' },
     { name: 'SGUA', description: 'Architecture and design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
     { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
-    { name: 'The Foursquare Church', description: 'Logistics and shipping services', url: 'https://www.foursquare.org/', image: 'public/portfolio/church.png' },
+    { name: '99% Invisible', description: 'Digital design and media publication', url: 'https://99percentinvisible.org/', image: 'public/portfolio/99.png' },
     { name: 'University of Richmond', description: 'Real estate and community website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
   ];
 
