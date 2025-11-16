@@ -30,7 +30,7 @@ export default function Portfolio() {
     { name: 'Spirit Dog Training', description: 'Dog training services and coaching', url: 'https://spiritdogtraining.com/', image: 'public/portfolio/spiritdog.png' },
     { name: 'SGUA', description: 'Architecture and design firm portfolio', url: 'https://sgua.com.au/', image: 'public/portfolio/sgua.png' },
     { name: 'Breyer Construction', description: 'Construction company portfolio', url: 'https://www.breyerconstruction.com/', image: 'public/portfolio/breyer.png' },
-    { name: 'Container', description: 'Logistics and shipping services', url: 'https://www.container.com/', image: 'public/portfolio/martincontainer.png' },
+    { name: 'The Foursquare Church', description: 'Logistics and shipping services', url: 'https://www.foursquare.org/', image: 'public/portfolio/church.png' },
     { name: 'University of Richmond', description: 'Real estate and community website', url: 'https://www.richmond.edu/', image: 'public/portfolio/university.png' },
   ];
 
