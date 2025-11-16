@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 import { useState } from 'react';
 
 interface FAQsProps {
@@ -56,67 +56,88 @@ export default function FAQs({ onNavigate }: FAQsProps) {
   };
 
   return (
-    <div className="min-h-screen bg-[#0d1117] pt-24 pb-20">
-      <div className="max-w-4xl mx-auto px-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#0d1117] to-[#1a1f2e] pt-24 pb-20">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h1
-            className="text-5xl font-bold text-[#f1f5f9] mb-4"
-          >
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-[#f1f5f9] to-[#60a5fa] bg-clip-text text-transparent mb-4">
             Frequently Asked Questions
           </h1>
-          <p className="text-[#94a3b8] text-lg">
+          <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
             Everything you need to know about our services and approach
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-6">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-[#1e293b] rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_0_30px_rgba(37,99,235,0.2)] transition-all"
+              className="group relative overflow-hidden rounded-2xl transition-all duration-500 hover:scale-[1.02]"
             >
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-[#1e3a8a]/20 transition-colors"
-              >
-                <span className="text-lg font-bold text-[#f1f5f9] pr-4">
-                  {faq.question}
-                </span>
-                <ChevronDown
-                  size={24}
-                  className={`text-[#2563eb] flex-shrink-0 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180' : ''
+              {/* Animated background gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1e293b] via-[#1e3a8a] to-[#1e293b] opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              {/* Shimmer effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+              
+              <div className="relative p-6 border border-white/10 rounded-2xl backdrop-blur-sm bg-black/20">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full flex items-start justify-between text-left group/btn"
+                >
+                  <span className="text-lg font-bold text-[#f1f5f9] pr-6 flex-1 leading-relaxed">
+                    {faq.question}
+                  </span>
+                  <div className="flex-shrink-0 ml-4 p-2 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e40af] group-hover/btn:from-[#1e40af] group-hover/btn:to-[#1e3a8a] transition-all duration-300 transform group-hover/btn:scale-110">
+                    {openIndex === index ? (
+                      <Minus size={18} className="text-white" />
+                    ) : (
+                      <Plus size={18} className="text-white" />
+                    )}
+                  </div>
+                </button>
+                
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-out ${
+                    openIndex === index 
+                      ? 'max-h-96 opacity-100 translate-y-0' 
+                      : 'max-h-0 opacity-0 -translate-y-4'
                   }`}
-                />
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
-                }`}
-              >
-                <div className="px-8 pb-6 text-[#94a3b8] leading-relaxed">
-                  {faq.answer}
+                >
+                  <div className="pt-4 mt-4 border-t border-white/10">
+                    <p className="text-[#cbd5e1] leading-relaxed font-light">
+                      {faq.answer}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-[#0f172a] to-[#1e3a8a] rounded-2xl p-8 text-center">
-          <h3
-            className="text-2xl font-bold text-[#f1f5f9] mb-3"
-          >
-            Still Have Questions?
-          </h3>
-          <p className="text-[#94a3b8] mb-6">
-            We're here to help. Reach out and we'll get back to you promptly.
-          </p>
-          <button
-            onClick={() => onNavigate('contact')}
-            className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e3a8a] text-[#f1f5f9] font-medium hover:scale-105 hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] transition-all"
-          >
-            Contact Us
-          </button>
+        {/* CTA Section */}
+        <div className="mt-20 relative overflow-hidden rounded-3xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#0f172a] animate-gradient-x"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+          
+          <div className="relative p-12 text-center">
+            <h3 className="text-3xl font-bold text-[#f1f5f9] mb-4">
+              Still Have Questions?
+            </h3>
+            <p className="text-[#cbd5e1] text-lg mb-8 max-w-2xl mx-auto">
+              We're here to help. Reach out and we'll get back to you promptly.
+            </p>
+            <button
+              onClick={() => onNavigate('contact')}
+              className="inline-flex items-center px-8 py-4 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e40af] text-[#f1f5f9] font-semibold hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] hover:scale-105 transition-all duration-300 group"
+            >
+              <span>Contact Us</span>
+              <div className="ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M5 12h14m-7-7l7 7-7 7"/>
+                </svg>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </div>
