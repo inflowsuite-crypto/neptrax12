@@ -34,7 +34,7 @@ export default function Portfolio() {
     { name: 'Sweeten', description: 'Home renovation platform', url: 'https://sweeten.com/', image: 'public/portfolio/sweeten.png' },
   ];
 
-    useEffect(() => {
+  useEffect(() => {
     const shuffled = [...projectsData];
     setProjects(shuffled);
   }, []);
@@ -44,12 +44,10 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0d1117] pt-24 pb-20">
+    <div className="min-h-screen bg-gradient-to-b from-[#0a192f] to-[#0d1117] pt-24 pb-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h1
-            className="text-5xl font-bold text-[#f1f5f9] mb-4"
-          >
+          <h1 className="text-5xl font-bold text-[#f1f5f9] mb-4">
             Our Work Speaks for Itself.
           </h1>
           <p className="text-[#94a3b8] text-lg max-w-2xl mx-auto">
@@ -71,20 +69,24 @@ export default function Portfolio() {
                   onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent opacity-40"></div>
+                
+                {/* Hover overlay with visit website button */}
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e3a8a] text-[#f1f5f9] font-medium text-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)]"
+                  >
+                    Visit Website
+                    <ExternalLink size={16} className="transition-transform" />
+                  </a>
+                </div>
               </div>
 
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-[#f1f5f9] mb-2">{project.name}</h3>
-                <p className="text-[#94a3b8] text-sm mb-6">{project.description}</p>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#2563eb] to-[#1e3a8a] text-[#f1f5f9] font-medium text-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)] transition-all"
-                >
-                  Visit Website
-                  <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
-                </a>
+                <p className="text-[#94a3b8] text-sm">{project.description}</p>
               </div>
             </div>
           ))}
