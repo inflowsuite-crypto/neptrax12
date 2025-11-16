@@ -9,6 +9,7 @@ export default function Footer({ onNavigate }: FooterProps) {
     { id: 'home', label: 'Home' },
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'contact', label: 'Contact' },
+    { id: 'services', label: 'Services' },
   ];
 
   const infoLinks = [
