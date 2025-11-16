@@ -48,7 +48,7 @@ export default function About() {
           
           {/* Content */}
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold text-[#f1f5f9] mb-6">
+            <h2 className="text-3xl font-bold text-[#ffffff] mb-6">
               Based in Chicago, USA
             </h2>
             <div className="space-y-4 text-[#94a3b8] text-lg leading-relaxed">
